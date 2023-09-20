@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'write.css' %}" media="screen">
+    <link rel="stylesheet" href="{% static 'bootstrap/bootstrap.min.css' %}" media="screen">
+    <script src="https://kit.fontawesome.com/74b7559091.js" crossorigin="anonymous"></script>
+    <title>메인 페이지</title>
+</head>
+<body>
+    <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark" id="top-navbar">
+        <a class="navbar-brand" href="/">셀프텔링창고</a>
+        <button class="btn btn-link btn-sm order-1 order-lg-0" id="sidebarToggle">
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Resume</a></li>
+                <li class="nav-item"><a class="nav-link" href="write/">Write</a></li>
+                <li class="nav-item"><a class="nav-link" href="#!">Interview</a></li>
+                <li class="nav-item"><a class="nav-link">최신 결과</a></li>
+            </ul>
+        </div>
+        <!-- Navbar-->
+        <ul class="navbar-nav  ml-auto mr-0 mr-md-3 my-2 my-md-0">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" id="userDropdown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                   <i class="fas fa-user fa-fw"></i>
+                </a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#!">Sign Up</a></li>
+            <li class="nav-item"><a class="nav-link" href="#!">Log In</a></li>
+        </ul>
+    </nav>
+    <header class="py-5 bg-light border-bottom mb-4">
+        <div class="container">
+            <div class="text-center my-5">
+                <h1 class="fw-bolder">Welcome to Blog Home!</h1>
+                <p class="lead mb-0">A Bootstrap 5 starter layout for your next blog homepage</p>
+            </div>
+        </div>
+    </header>
+    <!-- Features section-->
+    <section class="py-5 border-bottom" id="features">
+        <div class="container px-5 my-5">
+            <div class="row gx-5">
+                <div class="col-lg-4 mb-5 mb-lg-0">
+                    <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-collection"></i></div>
+                    <h2 class="h4 fw-bolder">Featured title</h2>
+                    <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+                    <a class="text-decoration-none" href="#!">
+                        Call to action
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="col-lg-4 mb-5 mb-lg-0">
+                    <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-building"></i></div>
+                    <h2 class="h4 fw-bolder">Featured title</h2>
+                    <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+                    <a class="text-decoration-none" href="#!">
+                        Call to action
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="col-lg-4">
+                    <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-toggles2"></i></div>
+                    <h2 class="h4 fw-bolder">Featured title</h2>
+                    <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+                    <a class="text-decoration-none" href="#!">
+                        Call to action
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>

@@ -14,7 +14,14 @@ def landing(request):
         'mysite/write/landing.html'
     )
 
+def resume(request):
+    return render(
+        request,
+        'mysite/write/Resume.html'
+    )
 
-
-def index(request):
-    return HttpResponse("Hello world!")
+def write(request):
+    return render(
+        request,
+        'mysite/write/Write.html'
+    )

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'write.css' %}" media="screen">
+    <link rel="stylesheet" href="{% static 'bootstrap/bootstrap.min.css' %}" media="screen">
+    <script src="https://kit.fontawesome.com/74b7559091.js" crossorigin="anonymous"></script>
+    <title>메인 페이지</title>
+</head>
+<body>
+    <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark" id="top-navbar">
+        <a class="navbar-brand" href="landing/">셀프텔링창고</a>
+        <button class="btn btn-link btn-sm order-1 order-lg-0" id="sidebarToggle">
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item"><a class="nav-link" href="resume/">Resume</a></li>
+                <li class="nav-item"><a class="nav-link" href="write/">Write</a></li>
+                <li class="nav-item"><a class="nav-link" href="#!">Interview</a></li>
+                <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">최신 결과</a></li>
+            </ul>
+        </div>
+        <!-- Navbar-->
+        <ul class="navbar-nav  ml-auto mr-0 mr-md-3 my-2 my-md-0">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" id="userDropdown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                   <i class="fas fa-user fa-fw"></i>
+                </a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#!">Sign Up</a></li>
+            <li class="nav-item"><a class="nav-link" href="#!">Log In</a></li>
+        </ul>
+    </nav>
+    <div class="card mb-4">
+        <div class="card-header">Search</div>
+        <div class="card-body">
+            <div class="input-group">
+                <input class="form-control" type="text" placeholder="Enter search term..." aria-label="Enter search term..." aria-describedby="button-search">
+                <button class="btn btn-primary" id="button-search" type="button">Go!</button>
+            </div>
+        </div>
+    </div>
+    <h1>넣을 것</h1>
+    <ol>
+        <li>작성된 글 결과 보여주기</li>
+        <li>최신 글 보여주기</li>
+        <li>배경사진 => Do it Django 참고</li>
+        <li>검색</li>
+    </ol>
+</body>
